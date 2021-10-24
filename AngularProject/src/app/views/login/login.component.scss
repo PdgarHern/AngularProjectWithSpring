@@ -1,0 +1,140 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 303px;
+}
+
+.content h1 {
+  font-size: 25px;
+  color: #2C5592;
+  font-style: italic;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.subTitle p {
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-style: italic;
+  font-size: large;
+  color: #707070;
+}
+
+.login {
+  width: 100%;
+  border: 2px solid;
+  border-color: #707070;
+  border-radius: 20px;
+}
+
+.login p {
+  margin-left: 5%;
+  font-size: 18px;
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.userForm p {
+  width: 100%;
+}
+
+#mailInput {
+  width: 85%;
+  height: 32px;
+  margin-left: 5%;
+}
+
+.textForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 12px;
+  padding-bottom: 5px;
+}
+
+.textForm p {
+  width: 30%;
+}
+
+#passwordInput {
+  width: 85%;
+  height: 32px;
+  margin-left: 5%;
+}
+
+.sendBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 93%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sendButton {
+  background-color: #447bce;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.sendButton:disabled {
+  background-color: rgb(90, 111, 156);
+  color: rgb(173, 173, 173);
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.alert {
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  width: 93%;
+}
+
+#registerBtn {
+  background-color: #6698DB;
+  width: 100px !important;
+  margin-right: 10px;
+}
+
+#registerBtn:disabled {
+  background-color: #7fa0cc;
+  color: rgb(122, 122, 122);
+}
+
+#postSuccesful {
+  font-style: normal;
+  font-size: 20px;
+  margin-left: 10px;
+}

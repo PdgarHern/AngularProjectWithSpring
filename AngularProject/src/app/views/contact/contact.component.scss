@@ -1,0 +1,145 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.content h1 {
+  font-size: 25px;
+  color: #2C5592;
+  font-style: italic;
+}
+
+.phoneContact {
+  width: 100%;
+  border: 2px solid;
+  border-color: #707070;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.phoneContact p {
+  margin-left: 5%;
+  font-size: 18px;
+}
+
+.phoneContact img {
+  width: 69px;
+  height: 92px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.schedule p {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.emailContact {
+  width: 100%;
+  border: 2px solid;
+  border-color: #707070;
+  border-radius: 20px;
+}
+
+.emailContact p {
+  margin-left: 5%;
+  font-size: 18px;
+}
+
+.nameForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mailForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textForm {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 12px;
+  padding-bottom: 5px;
+}
+
+.nameForm p {
+  width: 30%;
+}
+
+.mailForm p {
+  width: 30%;
+}
+
+.textForm p {
+  width: 30%;
+}
+
+#nameInput {
+  width: 200px;
+  height: 32px;
+}
+
+#mailInput {
+  width: 200px;
+  height: 32px;
+}
+
+#textInput {
+  width: 200px;
+  height: 109px;
+}
+
+.sendBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 93%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sendButton {
+  background-color: #447bce;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.sendButton:disabled {
+  background-color: rgb(90, 111, 156);
+  color: rgb(173, 173, 173);
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.alert {
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  width: 93%;
+}
+
+#postSuccesful {
+  font-style: normal;
+  font-size: 20px;
+  margin-left: 10px;
+}

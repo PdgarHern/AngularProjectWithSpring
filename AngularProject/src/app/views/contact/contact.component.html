@@ -1,0 +1,55 @@
+<div class="content">
+    <h1>Para cualquier duda, ¡contacta con nosotros!</h1>
+
+    <div class="phoneContact">
+        <div class="phoneNumber">
+            <p>Número de contacto: 666 66 66 66</p>
+        </div>
+        <div class="schedule">
+            <p>Horario de consulta: De 11:00 A 19:00</p>
+            <img src="assets/img/Phone_GuyCN.png">
+        </div>
+    </div>
+    <div class="emailContact">
+        <div class="emailDirection">
+            <p>Email de contacto: pcGaming@tienda.es</p>
+        </div>
+        <div class="emailForm form">
+            <form (ngSubmit)="submit()" #userForm="ngForm">
+                <div class="nameForm form-group">
+                    <p for="user">Nombre</p>
+                    <input type="text" name="user" id="nameInput" [(ngModel)]="contact.name" #name="ngModel" required>
+                </div>
+
+                <div *ngIf="name.invalid && name.dirty" class="alert">
+                    <div *ngIf="name.errors?.required">*Campo requerido</div>
+                </div>
+
+                <div class="mailForm form-group" [formGroup]="userEmail">
+                    <p for="email">Email</p>
+                    <input [class.is-invalid]="userEmail.get('email')?.invalid && userEmail.get('email')?.touched" type="email" name="email" id="mailInput" [(ngModel)]="contact.email" formControlName="email" required>
+                </div>
+
+                <div *ngIf="(tEmail?.invalid && tEmail?.touched) || tEmail?.dirty" class="alert">
+                    <div *ngIf="tEmail?.errors?.required" class="text-danger">*Campo requerido</div>
+                    <div *ngIf="tEmail?.errors?.pattern" class="text-danger">*El correo no es válido</div>
+                  </div>
+
+                <div class="textForm form-group">
+                    <p for="text">Texto</p>
+                    <input type="text" name="text" id="textInput" [(ngModel)]="contact.text" #text="ngModel" required>
+                </div>
+
+                <div *ngIf="text.invalid && text.dirty" class="alert">
+                    <div *ngIf="text.errors?.required">*Campo requerido</div>
+                </div>
+
+
+                <div class="sendBtn">
+                    <button class="sendButton" type="submit" [disabled]="!userForm.form.valid">Enviar</button>
+                </div>
+                <h1 id="postSuccesful" [hidden]="!submitted">Envío satisfactorio</h1>
+            </form>
+        </div>
+    </div>
+</div>

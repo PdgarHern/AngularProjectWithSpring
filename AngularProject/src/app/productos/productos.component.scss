@@ -1,0 +1,34 @@
+.products {
+  
+  width: 100%;
+}
+
+.products p {
+  font-size: x-small;
+  color: white;
+}
+
+.forDiv {
+  display: inline-block !important;
+  //width: 100px;
+}
+
+.productWithIf {
+  width: 100px;
+}
+
+#oneProduct {
+  position: relative;
+  margin-top: 0;
+  margin-left: 12px;
+  margin-bottom: 283px;
+}
+
+#allProducts {
+  margin: 12px;
+}
+
+#productoImg {
+  width: 100px;
+  border-radius: 10px;
+}

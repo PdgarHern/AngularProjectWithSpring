@@ -1,0 +1,13 @@
+<div class="products">
+    <div class="forDiv" *ngFor="let p of productos">
+        <div id="oneProduct" class="productWithIf" *ngIf="p.nombre == search">
+            <img src="{{p.imagen}}" id="productoImg">
+            <p id="productoName">{{p.nombre}}</p>
+        </div>
+    
+        <div id="allProducts" class="productWithIf" *ngIf="search == 'personal-zone'">
+            <img src="{{p.imagen}}" id="productoImg">
+            <p id="productoName">{{p.nombre}}</p>
+        </div>
+    </div>
+</div>

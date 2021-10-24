@@ -1,0 +1,16 @@
+<div class="slideshow-container-2">
+
+    <div class="mySlides2 fade" *ngFor="let e of empleados">
+        <h1>Nombre: {{e.nombre}}</h1>
+        <p>{{e.descripcion}}</p>
+        <img src="{{e.imagen}}" style="width:100%">
+    </div>
+    <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+    <span *ngFor="let e of empleados" class="dot2" onclick="currentSlide2(i)"></span>
+</div>

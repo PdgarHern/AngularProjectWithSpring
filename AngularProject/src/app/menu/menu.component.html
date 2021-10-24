@@ -1,0 +1,18 @@
+<div class="topnav">
+    <app-header-logo></app-header-logo>
+    <div class="menuBtn">
+        <a id="btnInicio" href="/home" *ngIf="home == 0">Inicio</a>
+        <a id="btnContacto" href="/contact" *ngIf="contact == 0">Contacto</a>
+        <a id="btnConfig" *ngIf="config == 0">Configuración</a>
+    </div>
+    <div class="logIn" id="login" *ngIf="login == 0">
+        <div class="loginContainer">
+            <a href="/login"><img src="assets/img/login-icon-png-2.jpg" id="loginImg"></a>
+        </div>
+    </div>
+    <div class="logOut" id="logout" *ngIf="logout == 0">
+        <div class="logOutContainer">
+            <a (click)="logOut()"><img src="assets/img/logout_variant_icon_136438.png" id="logoutImg"></a>
+        </div>
+    </div>
+</div>

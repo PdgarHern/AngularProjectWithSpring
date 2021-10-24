@@ -1,0 +1,11 @@
+<div class="btnBuscar">
+    <div class="title">
+        <p>Buscar</p>
+    </div>
+    <form id="formBusqueda" (ngSubmit)="submit()" #userForm="ngForm">
+        <div class="busqueda form-group">
+            <input type="text" name="text" id="buscador" [(ngModel)]="producto.nombre" #text="ngModel">
+            <button id="btnBuscar" type="submit"><img src="assets/img/lupa.png" id="lupaImg"></button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.mainPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mainPart h1 {
+  font-size: 25px;
+  color: #2C5592;
+  font-style: italic;
+}
+
+.mainPart p {
+  font-size: 21px;
+  color: #707070;
+  font-style: bold;
+}
+
+.mainPart img {
+  width: 172px;
+  height: 233px;
+  margin-left: 10px;
+}
+
+.appExplain {
+  margin-top: 20px;
+  font-size: 21px;
+  color: #707070;
+}
+
+.employersTitle {
+  font-size: 25px;
+  color: #2C5592;
+  font-style: italic;
+}

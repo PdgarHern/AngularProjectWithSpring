@@ -1,0 +1,47 @@
+<div class="content">
+    <div class="title">
+        <h1>¡Inicia sesión!</h1>
+    </div>
+    <div class="subTitle">
+        <p>Disfruta al máximo de nuestra tienda</p>
+    </div>
+
+    <div class="emailForm form">
+
+    </div>
+
+    <div class="login form">
+        <form (ngSubmit)="submit()" #userForm="ngForm">
+            <div class="userForm form-group" [formGroup]="userEmail">
+                <p for="email">Usuario (email)</p>
+                <input [class.is-invalid]="userEmail.get('email')?.invalid && userEmail.get('email')?.touched"
+                    type="email" name="email" id="mailInput" [(ngModel)]="login.usuario" formControlName="email"
+                    required>
+            </div>
+
+            <div *ngIf="(tEmail?.invalid && tEmail?.touched) || tEmail?.dirty" class="alert">
+                <div *ngIf="tEmail?.errors?.required" class="text-danger">*Campo requerido</div>
+                <div *ngIf="tEmail?.errors?.pattern" class="text-danger">*El correo no es válido</div>
+            </div>
+
+            <div class="textForm form-group">
+                <p for="password">Contraseña</p>
+                <input type="password" name="password" id="passwordInput" [(ngModel)]="login.contrasenna" #password="ngModel" required minlength="8">
+            </div>
+
+            <div *ngIf="password.invalid && password.dirty" class="alert">
+                <div *ngIf="password.errors?.required">*Campo requerido</div>
+                <div *ngIf="password.errors?.minlength">*Mínimo 8 caracteres</div>
+            </div>
+
+
+            <div class="sendBtn">
+                <button class="sendButton" id="registerBtn" type="submit" [disabled]="!userForm.form.valid">Registrarse</button>
+                <button class="sendButton" type="submit" [disabled]="!userForm.form.valid">Iniciar</button>
+            </div>
+            <h1 id="postSuccesful" [hidden]="!loginS">Inicio satisfactorio</h1>
+            <h1 id="postSuccesful" [hidden]="!registerS">Registro satisfactorio</h1>
+        </form>
+    </div>
+
+</div>

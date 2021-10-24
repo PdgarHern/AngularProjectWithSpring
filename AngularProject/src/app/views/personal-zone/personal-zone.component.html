@@ -1,0 +1,11 @@
+<div class="content">
+    <app-menu2 id="menu2"></app-menu2>
+    <div class="title">
+        <h1>Nuestros productos</h1>
+    </div>
+    <app-btn-buscar id="btnBuscar"></app-btn-buscar>
+    <div class="showAllBtn">
+        <button class="showAll" [hidden]="!showAll" (click)="showAllProducts()">Mostrar todo</button>
+    </div>
+    <app-productos></app-productos>
+</div>
